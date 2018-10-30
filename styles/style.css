@@ -607,7 +607,7 @@ button {
     }     
     
     .footerLinks {
-        width: 700px;
+        width: 650px;
         margin: 0 auto;
     }    
 
@@ -615,8 +615,12 @@ button {
     .pages,
     .recentPosts {
         float: left;
-        width: 33%; 
+        width: calc((100% - 70px) / 3); 
         margin: 0;       
+    }
+
+    .pages {
+        margin: 0 35px;
     }
 
     .contactInfo a {         
@@ -668,12 +672,13 @@ button {
     }
 
     .recentPosts {
-        display: block;
+        display: block;        
     }
 
     .recentPosts a {
         text-align: left;
         padding: 0 10px 10px 0; 
+        text-transform: capitalize;
     }
 
     /* HOVER EFFECTS */
@@ -725,6 +730,15 @@ button {
 
     .tasty {
         font-size: 15.5rem;
+    }
+
+    .aboutText,
+    .aboutIcons {
+        padding: 100px 0;
+    }
+
+    .aboutText p {
+        margin: 30px auto;
     }
 
     .blogText,
