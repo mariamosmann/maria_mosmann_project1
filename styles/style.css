@@ -1,0 +1,821 @@
+/* BASIC SETUP START */
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.skip-link {
+    position: absolute;
+    left: -1000px;
+    top: 5px;
+    z-index: 999;
+    background:#fdc800;
+    color: #232323;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Cabin', sans-serif;
+    color: #232323;
+}
+
+body {
+    font-size: 2rem;
+}
+
+/* BASIC SETUP END */
+
+/* GENERAL SETUP START */
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {    
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2.2rem; 
+    padding-top: 156px; 
+    max-width: 350px; 
+    clear: both;
+    margin: 0 auto; 
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4.2rem;
+    font-weight: 400;
+    text-transform: none;
+}
+
+h3 {
+    font-size: 3.2rem; 
+}
+
+h4 {
+    font-size: 2.4rem;
+    color: #f8f8f8;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 29px;
+    text-transform: none;
+    font-weight: 400;
+}
+
+a {
+    color: #232323;
+    font-size: 1.8rem;
+    text-decoration: none;   
+    padding: 10px;
+    display: block;       
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;    
+}
+
+.wrapper {
+    width: 100%;
+}
+
+/* GENERAL SETUP END */
+
+/* HEADER START */
+
+.home {    
+    width: 100%;
+    background-image: url("../assets/image-1-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 90vh;
+}
+
+.home .wrapper {
+    position: relative;
+}
+
+header p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    padding: 25px 0 0 20px; /* Font overflows its container, added 5px to compensate that */
+    float: left; 
+    text-transform: capitalize;
+    font-weight: 400;   
+}
+
+.tasty {
+    font-family: 'Great Vibes', cursive;
+    font-size: 12rem;
+    font-weight: 400;
+    text-transform: capitalize;        
+}
+
+/* HEADER MENU START */
+
+.openMenu {  
+    float: right;
+    padding: 20px 20px 0 0;    
+}
+
+.headerMenu {    
+	display: none;    
+}
+
+.show {	
+    display: block;
+    position: absolute;
+    right: 0; 
+    top: 110%;   
+	z-index: 10;    
+    width: 100%;
+    background-color: rgba(248, 248, 248, 0.6);
+    color: #232323;
+    padding: 15px;     
+} 
+
+/* HEADER MENU END */
+
+/* SOCIAL MEDIA START */
+
+.socialMedia {
+    display: none;
+}
+
+/* SOCIAL MEDIA END */
+
+/* HEADER END */
+
+/* MAIN START */
+
+/* ABOUT START */
+
+.aboutText,
+.aboutIcons {
+    background: #eaedf4;
+    padding: 50px 0;
+}
+
+/* ABOUT TEXT START */
+
+.aboutText p {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.aboutText a {
+    background: #fdc800;
+    padding: 15px;    
+    width: 214px;    
+    margin: 0 auto;    
+}
+
+/* ABOUT TEXT END */
+
+/* ABOUT ICONS START */
+
+.aboutIcons {
+    background: #232323;    
+}
+
+.aboutIconsItems {
+    margin: 0 auto;
+}
+
+.aboutIconsItems .fas { 
+    text-align: center;    
+    font-size: 4rem;
+    color: #f8f8f8;
+    display: block; /* Will only work with text-align center AND ALSO display block -- why? */
+    margin-bottom: 20px;
+}
+
+.aboutIconsItems h4 {
+    margin-bottom: 30px;
+}
+
+.aboutIconsItems:last-of-type h4 {
+    margin-bottom: 0;
+}
+
+/* ABOUT ICONS END */
+
+/* ABOUT END */
+
+/* BLOG STARTS */
+
+/* BLOG GALLERY START */
+
+.galleryItem {
+    float: left;
+    width: 50%;
+}
+
+.gallery li:last-child {
+    display: none;
+}
+
+/* BLOG GALLERY END */
+
+/* BLOG ENTRIES START */
+
+.blogEntries {
+    background: #eaedf4;
+}
+
+.blogText {
+    padding: 50px 0;
+}
+
+.blogText p {
+    margin: 20px auto;
+    width: 80%;
+} 
+
+.blogText a {
+    background: #fdc800;
+    padding: 15px;    
+    width: 160px;    
+    margin: 0 auto;
+}
+
+.blogImage img {
+    width: 100%;
+}
+
+/* BLOG ENTRIES END */
+
+/* BLOG ENDS */
+
+/* MEET THE COOK START */
+
+.meetTheCook {
+    padding: 50px 0;
+}
+
+.cookImage {  
+    width: 50%;  
+    margin: 0 auto;
+}
+
+.cookText {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.cookText p {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.cookText a {
+    background: #fdc800;
+    padding: 15px;    
+    width: 214px;    
+    margin: 0 auto;
+}
+
+/* MEET THE COOK END */
+
+/* MAIN END */
+
+/* FOOTER START */
+
+footer {
+    background: #232323;    
+}
+
+footer .wrapper {
+    padding: 50px 0;
+}
+
+footer h4 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #f8f8f8;
+    margin-bottom: 11px;
+}
+
+footer a {    
+    color: #f8f8f8;
+    font-weight: 400;
+}
+
+/* FOOTER FORM START */
+
+.stayUpdated {
+    margin-bottom: 30px;
+}
+
+input[type=email] {
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 360px;
+    height: 50px;
+    border: none;
+    font-family: 'Cabin', sans-serif;    
+    text-align: center;
+    font-size: 1.8rem;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+	-moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;    
+    border: 2px solid #231f1f;
+    width: 360px;
+    height: 50px;
+    border: none;
+    font-family: 'Cabin', sans-serif;    
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: #fdc800;
+    display: block;
+    margin: 10px auto 0 auto;
+} 
+
+/* FOOTER FORM END */
+
+/* FOOTER LINKS START */
+
+/* CONTACT INFO START */
+
+.contactInfo {
+    margin-bottom: 30px;
+}
+
+.contactInfo a { 
+    float: left;   
+    text-transform: none;    
+    width: 50%;
+    text-align: right;
+    padding-right: 2px;
+}
+
+.contactInfo a[href="mailto:info@email.com"]::after {
+    content: ",";
+}
+
+.contactInfo a:last-of-type {
+    text-align: left;
+    padding: 10px 10px 10px 2px;
+}
+
+.contactInfo p {
+    float: left;    
+    width: 50%;
+    text-align: right;
+    padding-right: 2px;
+}
+
+.contactInfo p:last-of-type {
+    text-align: left;
+    padding-left: 2px;    
+}
+
+/* CONTACT INFO END */
+
+/* PAGES START */
+
+.footerMenu ul {
+    width: 325px; /* px seems to be working better with the floated elements, even for responsiveness */
+    margin: 0 auto;
+}
+
+.footerMenu li {
+    float: left;
+}
+
+.footerMenu a {
+    padding-right: 0; 
+    text-align: center; 
+}
+
+.footerMenu a::after {
+    content: "|";
+    padding-left: 10px;
+}
+
+.footerMenu a[href="#contact"]::after {
+    content: "";
+}
+
+/* PAGES END */
+
+/* RECENT POSTS START */
+
+.recentPosts {
+    display: none;
+}
+
+/* RECENT POSTS END */
+
+/* FOOTER LINKS END */
+
+/* COPYRIGHT START */
+
+.copyright {
+    background: #000;
+    width: 100%;    
+}
+
+.copyright p {
+    color: #f8f8f8;
+    opacity: 0.5;
+    padding: 10px;    
+}
+
+/* COPYRIGHT END */
+
+/* FOOTER END */
+
+/* MEDIA QUERY START */
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 768px) {
+    .home {      
+    background-image: url("../assets/image-1.jpg");
+    }
+
+    .aboutText p {
+    width: 70%;
+    }
+
+    .aboutIcons .wrapper {
+        width: 560px;
+        margin: 0 auto;
+    }
+
+    .aboutIconsItems {
+        float: left;
+    }
+
+    .aboutIconsItems:nth-child(2) {
+        margin: 0 70px;
+    }
+
+    .aboutIconsItems h4 {
+    margin-bottom: 0;
+    }
+
+    .galleryItem {
+    float: left;
+    width: 33.3%;
+    }
+
+    .gallery li:last-child {
+        display: block;
+    }
+
+    .blogText p {    
+    width: 60%;
+    } 
+
+    .cookImage {  
+    width: 25%;  
+    margin: 0 auto;
+    }
+}
+
+/* Portrait tablet and small desktops */
+@media (min-width: 940px) {
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home .wrapper {
+        position: relative;
+    }
+
+   .openMenu {  
+        display: none;
+    }
+
+    header p {
+        font-family: 'Great Vibes', cursive;
+        font-size: 5.5rem;
+        padding: 25px 0 0 0;   
+    }
+
+    .headerMenu {
+        display: block;    
+        float: right;
+        width: 335px;
+        padding: 20px 20px 0 0;    
+    } 
+
+    .headerMenu li {
+        float: left;
+    }
+
+    .socialMedia {
+        display: block;        
+        position: absolute;
+        right: -25px;
+        top: 55%; 
+    }
+
+    .socialMedia a {
+        color: #231f1f;
+    } 
+
+    .gallery {
+        padding: 100px 0;
+    }
+
+    .galleryItem {
+        width: calc((100% - 40px) / 3);
+    }
+
+    .gallery li:nth-child(2) {
+        margin: 0 20px;
+    } 
+
+    footer h4 {
+        text-align: left;
+    }  
+
+    .stayUpdated h4 {
+        text-align: center;
+    }
+    
+    form {
+        margin: 0 auto;
+        width: 650px;
+    }
+    
+    input[type=email] {
+        float: left;
+        margin: 0;
+        width: 480px;
+    }
+
+    button {
+        float: left;
+        margin: 0;
+        width: 160px;
+    }     
+    
+    .footerLinks {
+        width: 700px;
+        margin: 0 auto;
+    }    
+
+    .contactInfo,
+    .pages,
+    .recentPosts {
+        float: left;
+        width: 33%; 
+        margin: 0;       
+    }
+
+    .contactInfo a {         
+        float: none;        
+        text-align: left;
+        padding: 0 10px 10px 0;
+    }
+
+    .contactInfo a[href="mailto:info@email.com"]::after {
+        content: "";
+    }
+
+    .contactInfo a:last-of-type {
+        padding: 0 10px 10px 0;
+    }    
+
+    .contactInfo p {
+        line-height: 18px;
+        float: none;
+        text-align: left;
+        padding: 0;
+    }
+
+    .contactInfo p:last-of-type {
+        padding: 0;    
+    }    
+
+    .footerMenu ul {
+        width: 100%; 
+        margin: 0;
+    }
+
+    .footerMenu li {
+        float: none;
+    }
+
+    .footerMenu a {
+        padding: 0 10px 10px 0; 
+        text-align: left; 
+    }
+
+    .footerMenu a::after {
+        content: "";
+        padding-left: 0;
+    }
+
+    .footerMenu a[href="#contact"]::after {
+        content: "";
+    }
+
+    .recentPosts {
+        display: block;
+    }
+
+    .recentPosts a {
+        text-align: left;
+        padding: 0 10px 10px 0; 
+    }
+
+    /* HOVER EFFECTS */
+
+    .headerMenu li a {
+        transition: padding 300ms ease-in-out, text-shadow 300ms ease-in-out;
+    }
+
+    .headerMenu li:hover a {
+        padding: 20px 10px 0 10px;
+        text-shadow:  0 -7px 1px #fdc800;
+    }
+
+    .aboutText a,
+    .blogText a,
+    .cookText a {
+        transition: background 300ms ease-in, color 300ms ease-in; 
+    }
+    
+    .aboutText a:hover,
+    .blogText a:hover,
+    .cookText a:hover {
+        background: #232323;
+        color: #fdc800;
+    }
+
+    button {
+        transition: color 300ms ease-in, border 300ms ease-in, background 300ms ease-in; 
+    }
+
+    button:hover {  
+        color: #eaedf4;
+        border: 1px solid #eaedf4;
+        background: #232323;
+        cursor: pointer
+    }
+
+    .copyright {
+        clear: both;
+    }
+}
+
+/* Landscape tablet and laptops*/
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .tasty {
+        font-size: 15.5rem;
+    }
+
+    .blogText,
+    .blogImage {
+        float: left;
+        width: 50%;
+    }
+
+    .blogText {
+        width: 40%;
+        margin-left: 10%;
+    }
+
+    .recipes .blogText,
+    .recipes .blogImage {
+        float: right;
+    } 
+    
+    .recipes .blogText {
+        margin: 0 10% 0 0;
+    }
+
+    .blogText p {
+        margin: 2% auto;
+        padding: 0;
+        width: 85%;        
+    } 
+
+    .cookImage,
+    .cookText {
+        float: left;
+    }
+
+    .cookImage {
+        width: 30%;
+        margin: 5% 0;
+    }
+
+    .cookText {
+        width: calc(70% - 50px);
+        margin-left: 50px;        
+    }
+
+    .cookText h2 {
+        text-align: left;
+    }
+    
+    .cookText p {
+        text-align: left;
+        margin: 30px 0;
+    }
+
+    .cookText a {
+        margin: 0;
+    }
+}
+
+/* Landscape tablet and laptops*/
+@media (min-width: 1280px) {
+
+    .wrapper {
+    max-width: 1280px;  /* 1600px - 160px in each side, as shown in the layout provided by the designer */
+    width: 90%; 
+    margin: 0 auto;
+    }
+
+    .socialMedia .fab {
+        color: #fdc800;
+        transition: color 300ms ease-in;
+    }
+
+    .socialMedia .fab:hover {
+        color: #232323;
+    }
+
+    .blogText p {
+        width: 50%;
+        margin: 5% auto;
+    } 
+
+    /* footer .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .stayUpdated,
+    .footerLinks {
+        float: right;
+        width: 45%;
+    } */
+}
+
+
+
