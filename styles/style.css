@@ -507,11 +507,11 @@ button {
 /* Landscape phone to portrait tablet */
 @media (min-width: 768px) {
     .home {      
-    background-image: url("../assets/image-1.jpg");
+        background-image: url("../assets/image-1.jpg");
     }
 
     .aboutText p {
-    width: 70%;
+        width: 70%;
     }
 
     .aboutIcons .wrapper {
@@ -528,12 +528,12 @@ button {
     }
 
     .aboutIconsItems h4 {
-    margin-bottom: 0;
+        margin-bottom: 0;
     }
 
     .galleryItem {
-    float: left;
-    width: 33.3%;
+        float: left;
+        width: 33.3%;
     }
 
     .gallery li:last-child {
@@ -541,12 +541,12 @@ button {
     }
 
     .blogText p {    
-    width: 60%;
+        width: 60%;
     } 
 
     .cookImage {  
-    width: 25%;  
-    margin: 0 auto;
+        width: 25%;  
+        margin: 0 auto;
     }
 }
 
@@ -837,9 +837,9 @@ button {
 @media (min-width: 1280px) {
 
     .wrapper {
-    max-width: 1280px;  /* 1600px - 160px in each side, as shown in the layout provided by the designer */
-    width: 90%; 
-    margin: 0 auto;
+        max-width: 1280px;  /* 1600px - 160px in each side, as shown in the layout provided by the designer */
+        width: 90%; 
+        margin: 0 auto;
     }
 
     .socialMedia .fab {
