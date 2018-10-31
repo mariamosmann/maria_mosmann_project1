@@ -337,7 +337,7 @@ footer h4 {
 
 footer p {
     color: #f8f8f8;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 
 footer a {    
@@ -470,7 +470,8 @@ button {
 .copyright p {
     color: #f8f8f8;
     opacity: 0.5;
-    padding: 10px;    
+    padding: 10px;
+    margin-bottom: 0;    
 }
 
 /* COPYRIGHT END */
@@ -478,6 +479,30 @@ button {
 /* FOOTER END */
 
 /* MEDIA QUERY START */
+
+/* smaller phone to mobile layout provided by designer */
+
+@media (min-width: 300px) and (max-width: 400px) {
+    html {
+        font-size: 50%;
+    }
+
+    footer .wrapper {
+        padding: 25px 0;
+    }
+    
+    input[type=email] {        
+        width: 280px;        
+    }
+
+    button {        
+        width: 280px;        
+    } 
+
+    .footerMenu ul {
+        width: 280px; 
+    }
+}
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 768px) {
@@ -691,6 +716,16 @@ button {
     .headerMenu li:hover a {
         padding: 20px 10px 0 10px;
         text-shadow:  0 -7px 1px #fdc800;
+    }
+
+    .aboutIconsItems h4,
+    .aboutIconsItems .fas {
+        transition: color 300ms ease-in;
+    }
+
+    .aboutIconsItems a:hover h4,
+    .aboutIconsItems a:hover .fas {
+        color: #fdc800;
     }
 
     .aboutText a,
