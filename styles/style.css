@@ -228,7 +228,7 @@ header p {
     text-align: center;    
     font-size: 4rem;
     color: #f8f8f8;
-    display: block; /* Will only work with text-align center AND ALSO display block -- why? */
+    display: block; 
     margin-bottom: 20px;
 }
 
@@ -750,7 +750,8 @@ button {
 
     .blogText {
         width: 40%;
-        margin-left: 10%;
+        margin: 5% 0 0 10%;
+        padding: 0;
     }
 
     .recipes .blogText,
@@ -759,13 +760,13 @@ button {
     } 
     
     .recipes .blogText {
-        margin: 0 10% 0 0;
+        margin: 5% 10% 0 0;
     }
 
     .blogText p {
-        margin: 2% auto;
+        margin: 5% auto;
         padding: 0;
-        width: 85%;        
+        width: 80%;        
     } 
 
     .cookImage,
@@ -775,12 +776,12 @@ button {
 
     .cookImage {
         width: 30%;
-        margin: 5% 0;
+        margin: 10% 0;
     }
 
     .cookText {
         width: calc(70% - 50px);
-        margin-left: 50px;        
+        margin: 6% 0 0 50px;        
     }
 
     .cookText h2 {
@@ -819,6 +820,10 @@ button {
         width: 50%;
         margin: 5% auto;
     } 
+
+    .cookImage {
+        margin: 5% 0;
+    }
 
     footer .wrapper {
         width: 1200px;    
@@ -864,6 +869,3 @@ button {
         margin: 0 15px;
     } 
 }
-
-
-
